@@ -1,0 +1,125 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : B.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/B.vf -w C:/Users/asilva3/Desktop/hello/world/B.sch
+//Design Name: B
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_B(I0, 
+                     I1, 
+                     I2, 
+                     I3, 
+                     I4, 
+                     I5, 
+                     O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module B(n0, 
+         n1, 
+         n2, 
+         n3, 
+         CB);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CB;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND4B2  XLXI_9 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B2  XLXI_10 (.I0(n3), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n1), 
+                   .O(XLXN_3));
+   AND4B2  XLXI_11 (.I0(n1), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n3), 
+                   .O(XLXN_5));
+   AND4B1  XLXI_12 (.I0(n2), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_4));
+   AND4B1  XLXI_13 (.I0(n0), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_6));
+   AND4  XLXI_14 (.I0(n3), 
+                 .I1(n1), 
+                 .I2(n2), 
+                 .I3(n0), 
+                 .O(XLXN_7));
+   (* HU_SET = "XLXI_15_3" *) 
+   OR6_MXILINX_B  XLXI_15 (.I0(XLXN_7), 
+                          .I1(XLXN_6), 
+                          .I2(XLXN_5), 
+                          .I3(XLXN_4), 
+                          .I4(XLXN_3), 
+                          .I5(XLXN_1), 
+                          .O(CB));
+endmodule

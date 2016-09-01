@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -refsym A C:/Users/asilva3/Desktop/hello/world/A.sch C:/Users/asilva3/Desktop/hello/world/A.sym 
+sch2sym -intstyle ise -family spartan3e -refsym A C:/Users/asilva3/Desktop/hello/world/A.sch C:/Users/asilva3/Desktop/hello/world/A.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym A C:/Users/asilva3/Desktop/hello/world/A.sch C:/Users/asilva3/Desktop/hello/world/A.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym A C:/Users/asilva3/Desktop/hello/world/A.sch C:/Users/asilva3/Desktop/hello/world/A.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym A C:/Users/asilva3/Desktop/hello/world/A.sch C:/Users/asilva3/Desktop/hello/world/A.sym 

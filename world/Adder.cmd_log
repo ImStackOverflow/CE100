@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym Adder C:/Users/asilva3/Desktop/hello/world/Adder.sch C:/Users/asilva3/Desktop/hello/world/Adder.sym 
+sch2sym -intstyle ise -family spartan3e -refsym Adder C:/Users/asilva3/Desktop/hello/world/Adder.sch C:/Users/asilva3/Desktop/hello/world/Adder.sym 

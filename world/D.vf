@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/D.vf -w C:/Users/asilva3/Desktop/hello/world/D.sch
+//Design Name: D
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D(n0, 
+         n1, 
+         n2, 
+         n3, 
+         CD);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CD;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   AND4B3  XLXI_7 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B3  XLXI_8 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n0), 
+                  .I3(n2), 
+                  .O(XLXN_2));
+   AND4B1  XLXI_9 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B2  XLXI_10 (.I0(n2), 
+                   .I1(n0), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_4));
+   AND4  XLXI_11 (.I0(n3), 
+                 .I1(n2), 
+                 .I2(n1), 
+                 .I3(n0), 
+                 .O(XLXN_5));
+   OR5  XLXI_13 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(CD));
+endmodule

@@ -1,0 +1,729 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : topworld.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/topworld.vf -w C:/Users/asilva3/Desktop/hello/world/topworld.sch
+//Design Name: topworld
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module g_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CG);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CG;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   OR4  XLXI_1 (.I0(XLXN_5), 
+               .I1(XLXN_4), 
+               .I2(XLXN_3), 
+               .I3(XLXN_2), 
+               .O(CG));
+   AND4B4  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_2));
+   AND4B3  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_4));
+   AND4B2  XLXI_5 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module F_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CF);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CF;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   AND4B3  XLXI_1 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_5));
+   AND4B3  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n0), 
+                  .I3(n1), 
+                  .O(XLXN_6));
+   AND4B2  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_7));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_8));
+   AND4B1  XLXI_5 (.I0(n1), 
+                  .I1(n3), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_9));
+   OR5  XLXI_6 (.I0(XLXN_9), 
+               .I1(XLXN_8), 
+               .I2(XLXN_7), 
+               .I3(XLXN_6), 
+               .I4(XLXN_5), 
+               .O(CF));
+endmodule
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_topworld(I0, 
+                            I1, 
+                            I2, 
+                            I3, 
+                            I4, 
+                            I5, 
+                            O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module E_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CE);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CE;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND4B3  XLXI_8 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_2));
+   AND4B2  XLXI_9 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B3  XLXI_10 (.I0(n3), 
+                   .I1(n1), 
+                   .I2(n0), 
+                   .I3(n2), 
+                   .O(XLXN_4));
+   AND4B2  XLXI_11 (.I0(n3), 
+                   .I1(n1), 
+                   .I2(n2), 
+                   .I3(n0), 
+                   .O(XLXN_5));
+   AND4B1  XLXI_12 (.I0(n3), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_6));
+   AND4B2  XLXI_13 (.I0(n2), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_7));
+   (* HU_SET = "XLXI_14_6" *) 
+   OR6_MXILINX_topworld  XLXI_14 (.I0(XLXN_7), 
+                                 .I1(XLXN_6), 
+                                 .I2(XLXN_5), 
+                                 .I3(XLXN_4), 
+                                 .I4(XLXN_3), 
+                                 .I5(XLXN_2), 
+                                 .O(CE));
+endmodule
+`timescale 1ns / 1ps
+
+module D_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CD);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CD;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   AND4B3  XLXI_7 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B3  XLXI_8 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n0), 
+                  .I3(n2), 
+                  .O(XLXN_2));
+   AND4B1  XLXI_9 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B2  XLXI_10 (.I0(n2), 
+                   .I1(n0), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_4));
+   AND4  XLXI_11 (.I0(n3), 
+                 .I1(n2), 
+                 .I2(n1), 
+                 .I3(n0), 
+                 .O(XLXN_5));
+   OR5  XLXI_13 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(CD));
+endmodule
+`timescale 1ns / 1ps
+
+module B_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CB);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CB;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND4B2  XLXI_9 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B2  XLXI_10 (.I0(n3), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n1), 
+                   .O(XLXN_3));
+   AND4B2  XLXI_11 (.I0(n1), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n3), 
+                   .O(XLXN_5));
+   AND4B1  XLXI_12 (.I0(n2), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_4));
+   AND4B1  XLXI_13 (.I0(n0), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_6));
+   AND4  XLXI_14 (.I0(n3), 
+                 .I1(n1), 
+                 .I2(n2), 
+                 .I3(n0), 
+                 .O(XLXN_7));
+   (* HU_SET = "XLXI_15_7" *) 
+   OR6_MXILINX_topworld  XLXI_15 (.I0(XLXN_7), 
+                                 .I1(XLXN_6), 
+                                 .I2(XLXN_5), 
+                                 .I3(XLXN_4), 
+                                 .I4(XLXN_3), 
+                                 .I5(XLXN_1), 
+                                 .O(CB));
+endmodule
+`timescale 1ns / 1ps
+
+module A_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CA);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CA;
+   
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   AND4B3  XLXI_23 (.I0(n3), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_12));
+   AND4B3  XLXI_24 (.I0(n0), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n2), 
+                   .O(XLXN_13));
+   AND4B1  XLXI_25 (.I0(n2), 
+                   .I1(n3), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_14));
+   AND4B1  XLXI_26 (.I0(n1), 
+                   .I1(n2), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_15));
+   OR4  XLXI_27 (.I0(XLXN_15), 
+                .I1(XLXN_14), 
+                .I2(XLXN_13), 
+                .I3(XLXN_12), 
+                .O(CA));
+endmodule
+`timescale 1ns / 1ps
+
+module C_MUSER_topworld(n0, 
+                        n1, 
+                        n2, 
+                        n3, 
+                        CC);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CC;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   
+   AND4B2  XLXI_7 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_3));
+   AND4B1  XLXI_8 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_4));
+   AND4  XLXI_9 (.I0(n0), 
+                .I1(n1), 
+                .I2(n2), 
+                .I3(n3), 
+                .O(XLXN_5));
+   OR4  XLXI_10 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .I3(XLXN_7), 
+                .O(CC));
+   AND4B3  XLXI_11 (.I0(n0), 
+                   .I1(n3), 
+                   .I2(n2), 
+                   .I3(n1), 
+                   .O(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module Segment_MUSER_topworld(n0, 
+                              n1, 
+                              n2, 
+                              n3, 
+                              CA, 
+                              CB, 
+                              CC, 
+                              CD, 
+                              CE, 
+                              CF, 
+                              CG);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CA;
+   output CB;
+   output CC;
+   output CD;
+   output CE;
+   output CF;
+   output CG;
+   
+   
+   C_MUSER_topworld  XLXI_1 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CC(CC));
+   A_MUSER_topworld  XLXI_2 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CA(CA));
+   B_MUSER_topworld  XLXI_3 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CB(CB));
+   D_MUSER_topworld  XLXI_4 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CD(CD));
+   E_MUSER_topworld  XLXI_5 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CE(CE));
+   F_MUSER_topworld  XLXI_6 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CF(CF));
+   g_MUSER_topworld  XLXI_7 (.n0(n0), 
+                            .n1(n1), 
+                            .n2(n2), 
+                            .n3(n3), 
+                            .CG(CG));
+endmodule
+`timescale 1ns / 1ps
+
+module mux_MUSER_topworld(a, 
+                          b, 
+                          Cin, 
+                          Cout, 
+                          S);
+
+    input a;
+    input b;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(Cin), 
+                .I1(a), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(Cin), 
+                .O(XLXN_2));
+   AND2  XLXI_3 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_3));
+   OR3  XLXI_4 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(Cout));
+   XOR2  XLXI_5 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_4));
+   XOR2  XLXI_6 (.I0(Cin), 
+                .I1(XLXN_4), 
+                .O(S));
+endmodule
+`timescale 1ns / 1ps
+
+module Add_MUSER_topworld(a0, 
+                          a1, 
+                          a2, 
+                          b0, 
+                          b1, 
+                          b2, 
+                          Cin, 
+                          s0, 
+                          s1, 
+                          s2, 
+                          s3);
+
+    input a0;
+    input a1;
+    input a2;
+    input b0;
+    input b1;
+    input b2;
+    input Cin;
+   output s0;
+   output s1;
+   output s2;
+   output s3;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   mux_MUSER_topworld  XLXI_1 (.a(a0), 
+                              .b(b0), 
+                              .Cin(Cin), 
+                              .Cout(XLXN_1), 
+                              .S(s0));
+   mux_MUSER_topworld  XLXI_2 (.a(a1), 
+                              .b(b1), 
+                              .Cin(XLXN_1), 
+                              .Cout(XLXN_2), 
+                              .S(s1));
+   mux_MUSER_topworld  XLXI_3 (.a(a2), 
+                              .b(b2), 
+                              .Cin(XLXN_2), 
+                              .Cout(s3), 
+                              .S(s2));
+endmodule
+`timescale 1ns / 1ps
+
+module topworld(sw0, 
+                sw1, 
+                sw2, 
+                sw3, 
+                sw4, 
+                sw5, 
+                sw6, 
+                CA, 
+                CB, 
+                CC, 
+                CD, 
+                CE, 
+                CF, 
+                CG, 
+                Thisan0, 
+                Thisan1, 
+                Thisan2, 
+                Thisan3);
+
+    input sw0;
+    input sw1;
+    input sw2;
+    input sw3;
+    input sw4;
+    input sw5;
+    input sw6;
+   output CA;
+   output CB;
+   output CC;
+   output CD;
+   output CE;
+   output CF;
+   output CG;
+   output Thisan0;
+   output Thisan1;
+   output Thisan2;
+   output Thisan3;
+   
+   wire AN0;
+   wire XLXN_4;
+   wire XLXN_19;
+   wire XLXN_111;
+   wire XLXN_113;
+   wire XLXN_116;
+   wire XLXN_137;
+   wire XLXN_141;
+   wire XLXN_144;
+   wire XLXN_162;
+   wire XLXN_163;
+   wire XLXN_176;
+   wire XLXN_177;
+   wire XLXN_178;
+   wire XLXN_179;
+   wire XLXN_180;
+   wire XLXN_181;
+   wire XLXN_182;
+   wire XLXN_183;
+   wire XLXN_187;
+   
+   (* LOC = "L3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_5 (.I(sw1), 
+                .O(XLXN_4));
+   (* LOC = "K3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_6 (.I(sw2), 
+                .O(XLXN_111));
+   (* LOC = "F3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_8 (.I(sw5), 
+                .O(XLXN_144));
+   (* LOC = "G3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_9 (.I(sw4), 
+                .O(XLXN_116));
+   (* LOC = "B4" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_40 (.I(sw3), 
+                 .O(XLXN_162));
+   (* LOC = "E2" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_41 (.I(sw6), 
+                 .O(XLXN_141));
+   Add_MUSER_topworld  XLXI_45 (.a0(XLXN_4), 
+                               .a1(XLXN_111), 
+                               .a2(XLXN_162), 
+                               .b0(XLXN_116), 
+                               .b1(XLXN_144), 
+                               .b2(XLXN_141), 
+                               .Cin(XLXN_113), 
+                               .s0(XLXN_176), 
+                               .s1(XLXN_163), 
+                               .s2(XLXN_137), 
+                               .s3(XLXN_19));
+   Segment_MUSER_topworld  XLXI_57 (.n0(XLXN_176), 
+                                   .n1(XLXN_163), 
+                                   .n2(XLXN_137), 
+                                   .n3(XLXN_19), 
+                                   .CA(XLXN_177), 
+                                   .CB(XLXN_178), 
+                                   .CC(XLXN_179), 
+                                   .CD(XLXN_180), 
+                                   .CE(XLXN_181), 
+                                   .CF(XLXN_182), 
+                                   .CG(XLXN_183));
+   (* LOC = "L14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_58 (.I(XLXN_177), 
+                 .O(CA));
+   (* LOC = "H12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_59 (.I(XLXN_178), 
+                 .O(CB));
+   (* LOC = "N14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_60 (.I(XLXN_179), 
+                 .O(CC));
+   (* LOC = "N11" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_61 (.I(XLXN_180), 
+                 .O(CD));
+   (* LOC = "P12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_62 (.I(XLXN_181), 
+                 .O(CE));
+   (* LOC = "L13" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_63 (.I(XLXN_182), 
+                 .O(CF));
+   (* LOC = "M12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_64 (.I(XLXN_183), 
+                 .O(CG));
+   GND  XLXI_65 (.G(AN0));
+   (* LOC = "F12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_67 (.I(AN0), 
+                 .O(Thisan0));
+   VCC  XLXI_68 (.P(XLXN_187));
+   (* LOC = "J12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_69 (.I(XLXN_187), 
+                 .O(Thisan1));
+   (* LOC = "M13" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_70 (.I(XLXN_187), 
+                 .O(Thisan2));
+   (* LOC = "K14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_71 (.I(XLXN_187), 
+                 .O(Thisan3));
+   (* LOC = "P11" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXN_100 (.I(sw0), 
+                  .O(XLXN_113));
+endmodule

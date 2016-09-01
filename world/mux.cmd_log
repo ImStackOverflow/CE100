@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym mux C:/Users/asilva3/Desktop/hello/world/mux.sch C:/Users/asilva3/Desktop/hello/world/mux.sym 

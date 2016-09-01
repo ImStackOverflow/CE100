@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : g.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/g.vf -w C:/Users/asilva3/Desktop/hello/world/g.sch
+//Design Name: g
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module g(n0, 
+         n1, 
+         n2, 
+         n3, 
+         CG);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CG;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   OR4  XLXI_1 (.I0(XLXN_5), 
+               .I1(XLXN_4), 
+               .I2(XLXN_3), 
+               .I3(XLXN_2), 
+               .O(CG));
+   AND4B4  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_2));
+   AND4B3  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_4));
+   AND4B2  XLXI_5 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_5));
+endmodule

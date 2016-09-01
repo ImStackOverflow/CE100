@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : F.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/F.vf -w C:/Users/asilva3/Desktop/hello/world/F.sch
+//Design Name: F
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module F(n0, 
+         n1, 
+         n2, 
+         n3, 
+         CF);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CF;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   AND4B3  XLXI_1 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_5));
+   AND4B3  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n0), 
+                  .I3(n1), 
+                  .O(XLXN_6));
+   AND4B2  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_7));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_8));
+   AND4B1  XLXI_5 (.I0(n1), 
+                  .I1(n3), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_9));
+   OR5  XLXI_6 (.I0(XLXN_9), 
+               .I1(XLXN_8), 
+               .I2(XLXN_7), 
+               .I3(XLXN_6), 
+               .I4(XLXN_5), 
+               .O(CF));
+endmodule

@@ -1,0 +1,14 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/g.vf,-w,C:/Users/asilva3/Desktop/hello/world/g.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/C.vf,-w,C:/Users/asilva3/Desktop/hello/world/C.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/E.vf,-w,C:/Users/asilva3/Desktop/hello/world/E.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/topworld.vf,-w,C:/Users/asilva3/Desktop/hello/world/topworld.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/D.vf,-w,C:/Users/asilva3/Desktop/hello/world/D.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/mux.vf,-w,C:/Users/asilva3/Desktop/hello/world/mux.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/F.vf,-w,C:/Users/asilva3/Desktop/hello/world/F.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/B.vf,-w,C:/Users/asilva3/Desktop/hello/world/B.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/Segment.vf,-w,C:/Users/asilva3/Desktop/hello/world/Segment.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/Add.vf,-w,C:/Users/asilva3/Desktop/hello/world/Add.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/A.vf,-w,C:/Users/asilva3/Desktop/hello/world/A.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/topworld.vf,-w,C:/Users/asilva3/Desktop/hello/world/topworld.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/Segment.vf,-w,C:/Users/asilva3/Desktop/hello/world/Segment.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilva3/Desktop/hello/world/Add.vf,-w,C:/Users/asilva3/Desktop/hello/world/Add.sch

@@ -1,0 +1,10 @@
+Command line:
+   topworld_topworld_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65419
+
+Thu Jan 14 15:41:44 2016
+
+
+ Elaboration Time: 0.0624 sec

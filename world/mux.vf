@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/mux.vf -w C:/Users/asilva3/Desktop/hello/world/mux.sch
+//Design Name: mux
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux(a, 
+           b, 
+           Cin, 
+           Cout, 
+           S);
+
+    input a;
+    input b;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(Cin), 
+                .I1(a), 
+                .O(XLXN_1));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(Cin), 
+                .O(XLXN_2));
+   AND2  XLXI_3 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_3));
+   OR3  XLXI_4 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(Cout));
+   XOR2  XLXI_5 (.I0(b), 
+                .I1(a), 
+                .O(XLXN_4));
+   XOR2  XLXI_6 (.I0(Cin), 
+                .I1(XLXN_4), 
+                .O(S));
+endmodule

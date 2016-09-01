@@ -1,0 +1,18 @@
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/hello/world/topworld.xst" -ofn "C:/Users/asilva3/Desktop/hello/world/topworld.syr" 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/hello/world/topworld.xst" -ofn "C:/Users/asilva3/Desktop/hello/world/topworld.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 topworld.ngc topworld.ngd  
+map -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o topworld_map.ncd topworld.ngd topworld.pcf 
+par -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 topworld_map.ncd topworld.ncd topworld.pcf 
+trce -filter C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml topworld.twx topworld.ncd -o topworld.twr topworld.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f topworld.ut topworld.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/hello/world/topworld.xst" -ofn "C:/Users/asilva3/Desktop/hello/world/topworld.syr" 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/hello/world/topworld.xst" -ofn "C:/Users/asilva3/Desktop/hello/world/topworld.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 topworld.ngc topworld.ngd  
+map -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o topworld_map.ncd topworld.ngd topworld.pcf 
+par -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 topworld_map.ncd topworld.ncd topworld.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f topworld.ut topworld.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/hello/world/topworld.xst" -ofn "C:/Users/asilva3/Desktop/hello/world/topworld.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 topworld.ngc topworld.ngd  
+map -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o topworld_map.ncd topworld.ngd topworld.pcf 
+par -filter "C:/Users/asilva3/Desktop/hello/world/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 topworld_map.ncd topworld.ncd topworld.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f topworld.ut topworld.ncd 

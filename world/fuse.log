@@ -1,0 +1,55 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/asilva3/Desktop/hello/world/topworld_topworld_sch_tb_isim_beh.exe -prj C:/Users/asilva3/Desktop/hello/world/topworld_topworld_sch_tb_beh.prj work.topworld_topworld_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/mux.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/g.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/F.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/E.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/D.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/C.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/B.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/A.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/Segment.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/Add.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/topworld.vf" into library work
+Analyzing Verilog file "C:/Users/asilva3/Desktop/hello/world/thisistest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module IBUF
+Compiling module AND2
+Compiling module OR3
+Compiling module XOR2
+Compiling module mux_MUSER_topworld
+Compiling module Add_MUSER_topworld
+Compiling module AND4B2
+Compiling module AND4B1
+Compiling module AND4
+Compiling module OR4
+Compiling module AND4B3
+Compiling module C_MUSER_topworld
+Compiling module A_MUSER_topworld
+Compiling module FMAP
+Compiling module OR6_MXILINX_topworld
+Compiling module B_MUSER_topworld
+Compiling module OR5
+Compiling module D_MUSER_topworld
+Compiling module E_MUSER_topworld
+Compiling module F_MUSER_topworld
+Compiling module AND4B4
+Compiling module g_MUSER_topworld
+Compiling module Segment_MUSER_topworld
+Compiling module OBUF
+Compiling module GND
+Compiling module VCC
+Compiling module topworld
+Compiling module topworld_topworld_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 26 sub-compilation(s) to finish...
+Compiled 29 Verilog Units
+Built simulation executable C:/Users/asilva3/Desktop/hello/world/topworld_topworld_sch_tb_isim_beh.exe
+Fuse Memory Usage: 27612 KB
+Fuse CPU Usage: 545 ms

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym g C:/Users/asilva3/Desktop/hello/world/g.sch C:/Users/asilva3/Desktop/hello/world/g.sym 

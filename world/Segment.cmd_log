@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym Segment C:/Users/asilva3/Desktop/hello/world/Segment.sch C:/Users/asilva3/Desktop/hello/world/Segment.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Segment C:/Users/asilva3/Desktop/hello/world/Segment.sch C:/Users/asilva3/Desktop/hello/world/Segment.sym 

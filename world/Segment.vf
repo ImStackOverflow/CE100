@@ -1,0 +1,487 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Segment.vf
+// /___/   /\     Timestamp : 01/14/2016 15:21:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/hello/world/Segment.vf -w C:/Users/asilva3/Desktop/hello/world/Segment.sch
+//Design Name: Segment
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module g_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CG);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CG;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   OR4  XLXI_1 (.I0(XLXN_5), 
+               .I1(XLXN_4), 
+               .I2(XLXN_3), 
+               .I3(XLXN_2), 
+               .O(CG));
+   AND4B4  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_2));
+   AND4B3  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_4));
+   AND4B2  XLXI_5 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module F_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CF);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CF;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   AND4B3  XLXI_1 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_5));
+   AND4B3  XLXI_2 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n0), 
+                  .I3(n1), 
+                  .O(XLXN_6));
+   AND4B2  XLXI_3 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_7));
+   AND4B1  XLXI_4 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_8));
+   AND4B1  XLXI_5 (.I0(n1), 
+                  .I1(n3), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_9));
+   OR5  XLXI_6 (.I0(XLXN_9), 
+               .I1(XLXN_8), 
+               .I2(XLXN_7), 
+               .I3(XLXN_6), 
+               .I4(XLXN_5), 
+               .O(CF));
+endmodule
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_Segment(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module E_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CE);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CE;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND4B3  XLXI_8 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_2));
+   AND4B2  XLXI_9 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B3  XLXI_10 (.I0(n3), 
+                   .I1(n1), 
+                   .I2(n0), 
+                   .I3(n2), 
+                   .O(XLXN_4));
+   AND4B2  XLXI_11 (.I0(n3), 
+                   .I1(n1), 
+                   .I2(n2), 
+                   .I3(n0), 
+                   .O(XLXN_5));
+   AND4B1  XLXI_12 (.I0(n3), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_6));
+   AND4B2  XLXI_13 (.I0(n2), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_7));
+   (* HU_SET = "XLXI_14_8" *) 
+   OR6_MXILINX_Segment  XLXI_14 (.I0(XLXN_7), 
+                                .I1(XLXN_6), 
+                                .I2(XLXN_5), 
+                                .I3(XLXN_4), 
+                                .I4(XLXN_3), 
+                                .I5(XLXN_2), 
+                                .O(CE));
+endmodule
+`timescale 1ns / 1ps
+
+module D_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CD);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CD;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   AND4B3  XLXI_7 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B3  XLXI_8 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n0), 
+                  .I3(n2), 
+                  .O(XLXN_2));
+   AND4B1  XLXI_9 (.I0(n3), 
+                  .I1(n2), 
+                  .I2(n1), 
+                  .I3(n0), 
+                  .O(XLXN_3));
+   AND4B2  XLXI_10 (.I0(n2), 
+                   .I1(n0), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_4));
+   AND4  XLXI_11 (.I0(n3), 
+                 .I1(n2), 
+                 .I2(n1), 
+                 .I3(n0), 
+                 .O(XLXN_5));
+   OR5  XLXI_13 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .I3(XLXN_2), 
+                .I4(XLXN_1), 
+                .O(CD));
+endmodule
+`timescale 1ns / 1ps
+
+module B_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CB);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CB;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND4B2  XLXI_9 (.I0(n3), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n0), 
+                  .O(XLXN_1));
+   AND4B2  XLXI_10 (.I0(n3), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n1), 
+                   .O(XLXN_3));
+   AND4B2  XLXI_11 (.I0(n1), 
+                   .I1(n0), 
+                   .I2(n2), 
+                   .I3(n3), 
+                   .O(XLXN_5));
+   AND4B1  XLXI_12 (.I0(n2), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_4));
+   AND4B1  XLXI_13 (.I0(n0), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n3), 
+                   .O(XLXN_6));
+   AND4  XLXI_14 (.I0(n3), 
+                 .I1(n1), 
+                 .I2(n2), 
+                 .I3(n0), 
+                 .O(XLXN_7));
+   (* HU_SET = "XLXI_15_9" *) 
+   OR6_MXILINX_Segment  XLXI_15 (.I0(XLXN_7), 
+                                .I1(XLXN_6), 
+                                .I2(XLXN_5), 
+                                .I3(XLXN_4), 
+                                .I4(XLXN_3), 
+                                .I5(XLXN_1), 
+                                .O(CB));
+endmodule
+`timescale 1ns / 1ps
+
+module A_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CA);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CA;
+   
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   AND4B3  XLXI_23 (.I0(n3), 
+                   .I1(n2), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_12));
+   AND4B3  XLXI_24 (.I0(n0), 
+                   .I1(n1), 
+                   .I2(n3), 
+                   .I3(n2), 
+                   .O(XLXN_13));
+   AND4B1  XLXI_25 (.I0(n2), 
+                   .I1(n3), 
+                   .I2(n1), 
+                   .I3(n0), 
+                   .O(XLXN_14));
+   AND4B1  XLXI_26 (.I0(n1), 
+                   .I1(n2), 
+                   .I2(n3), 
+                   .I3(n0), 
+                   .O(XLXN_15));
+   OR4  XLXI_27 (.I0(XLXN_15), 
+                .I1(XLXN_14), 
+                .I2(XLXN_13), 
+                .I3(XLXN_12), 
+                .O(CA));
+endmodule
+`timescale 1ns / 1ps
+
+module C_MUSER_Segment(n0, 
+                       n1, 
+                       n2, 
+                       n3, 
+                       CC);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CC;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   
+   AND4B2  XLXI_7 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_3));
+   AND4B1  XLXI_8 (.I0(n0), 
+                  .I1(n1), 
+                  .I2(n2), 
+                  .I3(n3), 
+                  .O(XLXN_4));
+   AND4  XLXI_9 (.I0(n0), 
+                .I1(n1), 
+                .I2(n2), 
+                .I3(n3), 
+                .O(XLXN_5));
+   OR4  XLXI_10 (.I0(XLXN_5), 
+                .I1(XLXN_4), 
+                .I2(XLXN_3), 
+                .I3(XLXN_7), 
+                .O(CC));
+   AND4B3  XLXI_11 (.I0(n0), 
+                   .I1(n3), 
+                   .I2(n2), 
+                   .I3(n1), 
+                   .O(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module Segment(n0, 
+               n1, 
+               n2, 
+               n3, 
+               CA, 
+               CB, 
+               CC, 
+               CD, 
+               CE, 
+               CF, 
+               CG);
+
+    input n0;
+    input n1;
+    input n2;
+    input n3;
+   output CA;
+   output CB;
+   output CC;
+   output CD;
+   output CE;
+   output CF;
+   output CG;
+   
+   
+   C_MUSER_Segment  XLXI_1 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CC(CC));
+   A_MUSER_Segment  XLXI_2 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CA(CA));
+   B_MUSER_Segment  XLXI_3 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CB(CB));
+   D_MUSER_Segment  XLXI_4 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CD(CD));
+   E_MUSER_Segment  XLXI_5 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CE(CE));
+   F_MUSER_Segment  XLXI_6 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CF(CF));
+   g_MUSER_Segment  XLXI_7 (.n0(n0), 
+                           .n1(n1), 
+                           .n2(n2), 
+                           .n3(n3), 
+                           .CG(CG));
+endmodule

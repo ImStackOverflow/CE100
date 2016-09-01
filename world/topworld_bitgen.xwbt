@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\asilva3\Desktop\hello\world\topworld.ncd
+OUTFILE=C:\Users\asilva3\Desktop\hello\world\topworld.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\asilva3\Desktop\hello\world
+LICENSE=WebPack
+USER_INFO=210697467_1777488619_210576444_241
