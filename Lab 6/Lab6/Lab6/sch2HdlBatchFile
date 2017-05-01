@@ -1,0 +1,7 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/ringcounter.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/ringcounter.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/TopLevel.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/TopLevel.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/twocompliment.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/twocompliment.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/ff5.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/ff5.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/negsign.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/negsign.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/Selector.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/Selector.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-verilog,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/TopLevel.vf,-w,C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/TopLevel.sch

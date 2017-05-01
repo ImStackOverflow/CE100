@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -refsym ff5 {C:/Users/asilva3/Desktop/Lab 6/Lab6/ff5.sch} {C:/Users/asilva3/Desktop/Lab 6/Lab6/ff5.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ff5 {C:/Users/asilva3/Desktop/Lab 6/Lab6/ff5.sch} {C:/Users/asilva3/Desktop/Lab 6/Lab6/ff5.sym} 
+sch2sym -intstyle ise -family spartan3e -w -refsym ff5 C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/ff5.sch C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/ff5.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ff5 {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/ff5.sch} {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/ff5.sym} 

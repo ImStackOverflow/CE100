@@ -1,0 +1,138 @@
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 TopLevel.ngc TopLevel.ngd  
+map -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter C:/Users/asilva3/Desktop/Lab6/Lab62/Lab6/Lab6/iseconfig/filter.filter -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+trce -filter {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter} -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TopLevel.twx TopLevel.ncd -o TopLevel.twr TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 
+xst -intstyle ise -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -ifn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.xst" -ofn "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/TopLevel.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 "TopLevel.ngc" TopLevel.ngd  
+map -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o TopLevel_map.ncd TopLevel.ngd TopLevel.pcf 
+par -filter "C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 TopLevel_map.ncd TopLevel.ncd TopLevel.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f TopLevel.ut TopLevel.ncd 

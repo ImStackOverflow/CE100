@@ -1,0 +1,12 @@
+[Inputs]
+=Q[7:0]=
+[Outputs]
+A
+B
+C
+D
+F
+[BiDir]
+[ATTRIBUTES]
+VeriModel grade
+

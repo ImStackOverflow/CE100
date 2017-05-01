@@ -1,0 +1,107 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : negsign.vf
+// /___/   /\     Timestamp : 02/26/2016 21:47:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/negsign.vf" -w "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/negsign.sch"
+//Design Name: negsign
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_negsign(D0, 
+                            D1, 
+                            S0, 
+                            O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module negsign(an2, 
+               cathode, 
+               finish);
+
+    input an2;
+    input [6:0] cathode;
+   output [6:0] finish;
+   
+   wire a;
+   wire b;
+   wire c;
+   wire d;
+   wire e;
+   wire f;
+   wire g;
+   
+   (* HU_SET = "XLXI_1_58" *) 
+   M2_1_MXILINX_negsign  XLXI_1 (.D0(cathode[3]), 
+                                .D1(d), 
+                                .S0(an2), 
+                                .O(finish[3]));
+   BUF  XLXI_9 (.I(cathode[6]), 
+               .O(g));
+   (* HU_SET = "XLXI_10_59" *) 
+   M2_1_MXILINX_negsign  XLXI_10 (.D0(cathode[0]), 
+                                 .D1(a), 
+                                 .S0(an2), 
+                                 .O(finish[0]));
+   (* HU_SET = "XLXI_11_60" *) 
+   M2_1_MXILINX_negsign  XLXI_11 (.D0(cathode[2]), 
+                                 .D1(c), 
+                                 .S0(an2), 
+                                 .O(finish[2]));
+   (* HU_SET = "XLXI_12_61" *) 
+   M2_1_MXILINX_negsign  XLXI_12 (.D0(cathode[4]), 
+                                 .D1(e), 
+                                 .S0(an2), 
+                                 .O(finish[4]));
+   (* HU_SET = "XLXI_13_62" *) 
+   M2_1_MXILINX_negsign  XLXI_13 (.D0(cathode[1]), 
+                                 .D1(b), 
+                                 .S0(an2), 
+                                 .O(finish[1]));
+   (* HU_SET = "XLXI_14_63" *) 
+   M2_1_MXILINX_negsign  XLXI_14 (.D0(cathode[5]), 
+                                 .D1(f), 
+                                 .S0(an2), 
+                                 .O(finish[5]));
+   (* HU_SET = "XLXI_15_64" *) 
+   M2_1_MXILINX_negsign  XLXI_15 (.D0(cathode[6]), 
+                                 .D1(g), 
+                                 .S0(an2), 
+                                 .O(finish[6]));
+   VCC  XLXI_16 (.P(a));
+   VCC  XLXI_17 (.P(b));
+   VCC  XLXI_18 (.P(c));
+   VCC  XLXI_19 (.P(d));
+   VCC  XLXI_20 (.P(e));
+   VCC  XLXI_21 (.P(f));
+endmodule

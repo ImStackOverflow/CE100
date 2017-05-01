@@ -1,0 +1,10 @@
+vhdtdtfi -lib work {C:/Users/asilva3/Desktop/Lab 6/Lab6/statemachine.v} -lang verilog -prj Lab6 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e statemachine.spl {C:/Users/asilva3/Desktop/Lab 6/Lab6/statemachine.sym} 
+vhdtdtfi -lib work {C:/Users/asilva3/Desktop/Lab 6/Lab6/statemachine.v} -lang verilog -prj Lab6 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e statemachine.spl {C:/Users/asilva3/Desktop/Lab 6/Lab6/statemachine.sym} 
+vhdtdtfi -lib work C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/statemachine.v -lang verilog -prj Lab6 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w statemachine.spl C:/Users/asilv/Desktop/ArmandoLab6/Lab6/Lab6/statemachine.sym 
+vhdtdtfi -lib work {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/statemachine.v} -lang verilog -prj Lab6 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w statemachine.spl {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/statemachine.sym} 
+vhdtdtfi -lib work {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/statemachine.v} -lang verilog -prj Lab6 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w statemachine.spl {C:/Users/asilv/Desktop/Armando's Newest Lab/Lab63/Lab6/Lab6/statemachine.sym} 

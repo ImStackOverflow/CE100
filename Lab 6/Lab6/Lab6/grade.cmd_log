@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {C:/Users/asilva3/Desktop/Lab 6/Lab6/grade.v} -lang verilog -prj Lab6 -o grade.spl -module grade -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w grade.spl {C:/Users/asilva3/Desktop/Lab 6/Lab6/grade.sym} 

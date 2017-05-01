@@ -1,0 +1,299 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : twocompliment.vf
+// /___/   /\     Timestamp : 02/26/2016 21:47:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/twocompliment.vf" -w "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/twocompliment.sch"
+//Design Name: twocompliment
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_twocompliment(D0, 
+                                  D1, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module ADD8_MXILINX_twocompliment(A, 
+                                  B, 
+                                  CI, 
+                                  CO, 
+                                  OFL, 
+                                  S);
+
+    input [7:0] A;
+    input [7:0] B;
+    input CI;
+   output CO;
+   output OFL;
+   output [7:0] S;
+   
+   wire C0;
+   wire C1;
+   wire C2;
+   wire C3;
+   wire C4;
+   wire C5;
+   wire C6;
+   wire C6O;
+   wire dummy;
+   wire I0;
+   wire I1;
+   wire I2;
+   wire I3;
+   wire I4;
+   wire I5;
+   wire I6;
+   wire I7;
+   wire CO_DUMMY;
+   
+   assign CO = CO_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_16 (.I1(A[0]), 
+                 .I2(B[0]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I0));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_17 (.I1(A[1]), 
+                 .I2(B[1]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I1));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_18 (.I1(A[2]), 
+                 .I2(B[2]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I2));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_19 (.I1(A[3]), 
+                 .I2(B[3]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I3));
+   (* RLOC = "X0Y2" *) 
+   FMAP  I_36_20 (.I1(A[4]), 
+                 .I2(B[4]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I4));
+   (* RLOC = "X0Y2" *) 
+   FMAP  I_36_21 (.I1(A[5]), 
+                 .I2(B[5]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I5));
+   (* RLOC = "X0Y3" *) 
+   FMAP  I_36_22 (.I1(A[6]), 
+                 .I2(B[6]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I6));
+   (* RLOC = "X0Y3" *) 
+   FMAP  I_36_23 (.I1(A[7]), 
+                 .I2(B[7]), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(I7));
+   (* RLOC = "X0Y0" *) 
+   MUXCY_L  I_36_55 (.CI(C0), 
+                    .DI(A[1]), 
+                    .S(I1), 
+                    .LO(C1));
+   (* RLOC = "X0Y1" *) 
+   MUXCY_L  I_36_58 (.CI(C2), 
+                    .DI(A[3]), 
+                    .S(I3), 
+                    .LO(C3));
+   (* RLOC = "X0Y1" *) 
+   MUXCY_L  I_36_62 (.CI(C1), 
+                    .DI(A[2]), 
+                    .S(I2), 
+                    .LO(C2));
+   (* RLOC = "X0Y2" *) 
+   MUXCY_L  I_36_63 (.CI(C3), 
+                    .DI(A[4]), 
+                    .S(I4), 
+                    .LO(C4));
+   (* RLOC = "X0Y3" *) 
+   MUXCY  I_36_64 (.CI(C6), 
+                  .DI(A[7]), 
+                  .S(I7), 
+                  .O(CO_DUMMY));
+   XORCY  I_36_73 (.CI(CI), 
+                  .LI(I0), 
+                  .O(S[0]));
+   XORCY  I_36_74 (.CI(C0), 
+                  .LI(I1), 
+                  .O(S[1]));
+   XORCY  I_36_75 (.CI(C2), 
+                  .LI(I3), 
+                  .O(S[3]));
+   XORCY  I_36_76 (.CI(C1), 
+                  .LI(I2), 
+                  .O(S[2]));
+   XORCY  I_36_77 (.CI(C4), 
+                  .LI(I5), 
+                  .O(S[5]));
+   XORCY  I_36_78 (.CI(C3), 
+                  .LI(I4), 
+                  .O(S[4]));
+   XORCY  I_36_80 (.CI(C6), 
+                  .LI(I7), 
+                  .O(S[7]));
+   XORCY  I_36_81 (.CI(C5), 
+                  .LI(I6), 
+                  .O(S[6]));
+   (* RLOC = "X0Y3" *) 
+   MUXCY_D  I_36_107 (.CI(C5), 
+                     .DI(A[6]), 
+                     .S(I6), 
+                     .LO(C6), 
+                     .O(C6O));
+   (* RLOC = "X0Y2" *) 
+   MUXCY_L  I_36_110 (.CI(C4), 
+                     .DI(A[5]), 
+                     .S(I5), 
+                     .LO(C5));
+   (* RLOC = "X0Y0" *) 
+   MUXCY_L  I_36_111 (.CI(CI), 
+                     .DI(A[0]), 
+                     .S(I0), 
+                     .LO(C0));
+   XOR2  I_36_221 (.I0(A[7]), 
+                  .I1(B[7]), 
+                  .O(I7));
+   XOR2  I_36_222 (.I0(A[6]), 
+                  .I1(B[6]), 
+                  .O(I6));
+   XOR2  I_36_223 (.I0(A[5]), 
+                  .I1(B[5]), 
+                  .O(I5));
+   XOR2  I_36_224 (.I0(A[4]), 
+                  .I1(B[4]), 
+                  .O(I4));
+   XOR2  I_36_225 (.I0(A[3]), 
+                  .I1(B[3]), 
+                  .O(I3));
+   XOR2  I_36_228 (.I0(A[0]), 
+                  .I1(B[0]), 
+                  .O(I0));
+   XOR2  I_36_229 (.I0(A[1]), 
+                  .I1(B[1]), 
+                  .O(I1));
+   XOR2  I_36_230 (.I0(A[2]), 
+                  .I1(B[2]), 
+                  .O(I2));
+   XOR2  I_36_239 (.I0(C6O), 
+                  .I1(CO_DUMMY), 
+                  .O(OFL));
+endmodule
+`timescale 1ns / 1ps
+
+module twocompliment(seven, 
+                     final);
+
+    input [7:0] seven;
+   output [7:0] final;
+   
+   wire [7:0] invseven;
+   wire one;
+   wire [7:0] twos;
+   
+   (* HU_SET = "XLXI_2_49" *) 
+   ADD8_MXILINX_twocompliment  XLXI_2 (.A(invseven[7:0]), 
+                                      .B(), 
+                                      .CI(one), 
+                                      .CO(), 
+                                      .OFL(), 
+                                      .S(twos[7:0]));
+   INV  XLXI_3 (.I(seven[0]), 
+               .O(invseven[0]));
+   INV  XLXI_4 (.I(seven[1]), 
+               .O(invseven[1]));
+   INV  XLXI_5 (.I(seven[2]), 
+               .O(invseven[2]));
+   INV  XLXI_6 (.I(seven[3]), 
+               .O(invseven[3]));
+   INV  XLXI_7 (.I(seven[4]), 
+               .O(invseven[4]));
+   INV  XLXI_8 (.I(seven[5]), 
+               .O(invseven[5]));
+   INV  XLXI_9 (.I(seven[6]), 
+               .O(invseven[6]));
+   INV  XLXI_10 (.I(seven[7]), 
+                .O(invseven[7]));
+   VCC  XLXI_11 (.P(one));
+   (* HU_SET = "XLXI_12_50" *) 
+   M2_1_MXILINX_twocompliment  XLXI_12 (.D0(seven[0]), 
+                                       .D1(twos[0]), 
+                                       .S0(seven[7]), 
+                                       .O(final[0]));
+   (* HU_SET = "XLXI_13_55" *) 
+   M2_1_MXILINX_twocompliment  XLXI_13 (.D0(seven[1]), 
+                                       .D1(twos[1]), 
+                                       .S0(seven[7]), 
+                                       .O(final[1]));
+   (* HU_SET = "XLXI_14_56" *) 
+   M2_1_MXILINX_twocompliment  XLXI_14 (.D0(seven[2]), 
+                                       .D1(twos[2]), 
+                                       .S0(seven[7]), 
+                                       .O(final[2]));
+   (* HU_SET = "XLXI_15_51" *) 
+   M2_1_MXILINX_twocompliment  XLXI_15 (.D0(seven[3]), 
+                                       .D1(twos[3]), 
+                                       .S0(seven[7]), 
+                                       .O(final[3]));
+   (* HU_SET = "XLXI_16_52" *) 
+   M2_1_MXILINX_twocompliment  XLXI_16 (.D0(seven[4]), 
+                                       .D1(twos[4]), 
+                                       .S0(seven[7]), 
+                                       .O(final[4]));
+   (* HU_SET = "XLXI_17_53" *) 
+   M2_1_MXILINX_twocompliment  XLXI_17 (.D0(seven[5]), 
+                                       .D1(twos[5]), 
+                                       .S0(seven[7]), 
+                                       .O(final[5]));
+   (* HU_SET = "XLXI_18_54" *) 
+   M2_1_MXILINX_twocompliment  XLXI_18 (.D0(seven[6]), 
+                                       .D1(twos[6]), 
+                                       .S0(seven[7]), 
+                                       .O(final[6]));
+   (* HU_SET = "XLXI_22_57" *) 
+   M2_1_MXILINX_twocompliment  XLXI_22 (.D0(seven[7]), 
+                                       .D1(twos[7]), 
+                                       .S0(seven[7]), 
+                                       .O(final[7]));
+endmodule

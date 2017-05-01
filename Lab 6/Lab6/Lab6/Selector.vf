@@ -1,0 +1,177 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Selector.vf
+// /___/   /\     Timestamp : 02/26/2016 21:47:41
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/Selector.vf" -w "C:/Users/asilv/Desktop/Final Lab 6/Testing19/Lab63/Lab6/Lab6/Selector.sch"
+//Design Name: Selector
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_Selector(D0, 
+                              D1, 
+                              E, 
+                              S0, 
+                              O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_Selector(D0, 
+                              D1, 
+                              D2, 
+                              D3, 
+                              E, 
+                              S0, 
+                              S1, 
+                              O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_66" *) 
+   M2_1E_MXILINX_Selector  I_M01 (.D0(D0), 
+                                 .D1(D1), 
+                                 .E(E), 
+                                 .S0(S0), 
+                                 .O(M01));
+   (* HU_SET = "I_M23_65" *) 
+   M2_1E_MXILINX_Selector  I_M23 (.D0(D2), 
+                                 .D1(D3), 
+                                 .E(E), 
+                                 .S0(S0), 
+                                 .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module Selector(s0, 
+                s1, 
+                s2, 
+                s3, 
+                x, 
+                y);
+
+    input s0;
+    input s1;
+    input s2;
+    input s3;
+    input [15:0] x;
+   output [3:0] y;
+   
+   wire a;
+   wire b;
+   wire enable;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire XLXN_40;
+   
+   (* HU_SET = "XLXI_1_67" *) 
+   M4_1E_MXILINX_Selector  XLXI_1 (.D0(x[0]), 
+                                  .D1(x[4]), 
+                                  .D2(x[8]), 
+                                  .D3(x[12]), 
+                                  .E(enable), 
+                                  .S0(a), 
+                                  .S1(b), 
+                                  .O(y[0]));
+   (* HU_SET = "XLXI_2_68" *) 
+   M4_1E_MXILINX_Selector  XLXI_2 (.D0(x[1]), 
+                                  .D1(x[5]), 
+                                  .D2(x[9]), 
+                                  .D3(x[13]), 
+                                  .E(enable), 
+                                  .S0(a), 
+                                  .S1(b), 
+                                  .O(y[1]));
+   (* HU_SET = "XLXI_3_69" *) 
+   M4_1E_MXILINX_Selector  XLXI_3 (.D0(x[2]), 
+                                  .D1(x[6]), 
+                                  .D2(x[10]), 
+                                  .D3(x[14]), 
+                                  .E(enable), 
+                                  .S0(a), 
+                                  .S1(b), 
+                                  .O(y[2]));
+   (* HU_SET = "XLXI_4_70" *) 
+   M4_1E_MXILINX_Selector  XLXI_4 (.D0(x[3]), 
+                                  .D1(x[7]), 
+                                  .D2(x[11]), 
+                                  .D3(x[15]), 
+                                  .E(enable), 
+                                  .S0(a), 
+                                  .S1(b), 
+                                  .O(y[3]));
+   VCC  XLXI_5 (.P(enable));
+   OR2  XLXI_6 (.I0(XLXN_39), 
+               .I1(XLXN_36), 
+               .O(a));
+   OR2  XLXI_7 (.I0(XLXN_40), 
+               .I1(XLXN_37), 
+               .O(b));
+   AND4B3  XLXI_8 (.I0(s3), 
+                  .I1(s2), 
+                  .I2(s0), 
+                  .I3(s1), 
+                  .O(XLXN_36));
+   AND4B3  XLXI_9 (.I0(s3), 
+                  .I1(s1), 
+                  .I2(s0), 
+                  .I3(s2), 
+                  .O(XLXN_37));
+   AND4B3  XLXI_14 (.I0(s2), 
+                   .I1(s1), 
+                   .I2(s3), 
+                   .I3(s0), 
+                   .O(XLXN_39));
+   AND4B3  XLXI_15 (.I0(s2), 
+                   .I1(s1), 
+                   .I2(s3), 
+                   .I3(s0), 
+                   .O(XLXN_40));
+endmodule

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1146:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IBUF_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1146:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IFD_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1146:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1150:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IBUF_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1150:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IFD_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1150:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1162:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IBUF_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1162:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IFD_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1162:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1165:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IBUF_DELAY_VALUE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1165:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1213:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1213:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1213:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1217:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1217:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1217:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1221:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1221:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1221:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1225:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1225:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1225:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1229:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1229:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1229:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1233:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1233:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1233:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1237:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1237:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1237:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1290:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1290:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1290:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1294:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1294:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1294:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1298:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1298:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1298:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1302:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">DRIVE</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1302:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">IOSTANDARD</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="2591" delta="old" ><arg fmt="%s" index="1">&quot;TopLevel.vf&quot; line 1302:</arg> <arg fmt="%s" index="2">attribute on instance</arg> &lt;<arg fmt="%s" index="3">SLEW</arg>&gt; overrides <arg fmt="%s" index="4">generic/parameter on entity</arg>. It is possible that simulator will not take this attribute into account.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">TopLevel.vf</arg>&quot; line <arg fmt="%d" index="2">1168</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">CLR</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_77</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">TopLevel.vf</arg>&quot; line <arg fmt="%d" index="2">1168</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">D</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_77</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">TopLevel.vf</arg>&quot; line <arg fmt="%d" index="2">455</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">B</arg>&apos; of instance &apos;<arg fmt="%s" index="4">XLXI_2</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Q&lt;1:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_94</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_92</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_91</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_71</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">TC</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+</messages>
+

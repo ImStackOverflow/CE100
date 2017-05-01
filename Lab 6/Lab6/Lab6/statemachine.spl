@@ -1,0 +1,15 @@
+[Inputs]
+pb0
+pb2
+=PS[7:0]=
+[Outputs]
+increment
+decrement
+showstat
+reset
+gradestop
+=NS[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel statemachine
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\asilv\Desktop\Armando's Newest Lab\Lab63\Lab6\Lab6\TopLevel.ncd
+OUTFILE=C:\Users\asilv\Desktop\Armando's Newest Lab\Lab63\Lab6\Lab6\TopLevel.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\asilv\Desktop\Armando's Newest Lab\Lab63\Lab6\Lab6
+LICENSE=WebPack
+USER_INFO=211144974_0_0_715

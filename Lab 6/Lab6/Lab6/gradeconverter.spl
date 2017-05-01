@@ -1,0 +1,12 @@
+[Inputs]
+A
+B
+C
+D
+F
+[Outputs]
+=gradeconvert[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel gradeconverter
+
