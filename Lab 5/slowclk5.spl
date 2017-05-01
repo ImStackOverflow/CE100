@@ -1,0 +1,10 @@
+[Inputs]
+eclk
+[Outputs]
+dig_sel
+sysclk
+qsec
+[BiDir]
+[ATTRIBUTES]
+VeriModel slowclk5
+

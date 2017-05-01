@@ -1,0 +1,17 @@
+[Inputs]
+n0
+n1
+n2
+n3
+[Outputs]
+CA
+CB
+CC
+CD
+CE
+CF
+CG
+[BiDir]
+[ATTRIBUTES]
+VeriModel hex7seg
+

@@ -1,0 +1,1144 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Top.vf
+// /___/   /\     Timestamp : 02/11/2016 11:07:28
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/Lab5/lab54/lab5/Top.vf -w C:/Users/asilva3/Desktop/Lab5/lab54/lab5/Top.sch
+//Design Name: Top
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FTRSE_MXILINX_Top(C, 
+                         CE, 
+                         R, 
+                         S, 
+                         T, 
+                         Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input R;
+    input S;
+    input T;
+   output Q;
+   
+   wire CE_S;
+   wire D_S;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDRE  I_36_35 (.C(C), 
+                 .CE(CE_S), 
+                 .D(D_S), 
+                 .R(R), 
+                 .Q(Q_DUMMY));
+   OR2  I_36_73 (.I0(S), 
+                .I1(TQ), 
+                .O(D_S));
+   OR2  I_36_77 (.I0(CE), 
+                .I1(S), 
+                .O(CE_S));
+endmodule
+`timescale 1ns / 1ps
+
+module CB4RE_MXILINX_Top(C, 
+                         CE, 
+                         R, 
+                         CEO, 
+                         Q0, 
+                         Q1, 
+                         Q2, 
+                         Q3, 
+                         TC);
+
+    input C;
+    input CE;
+    input R;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_0" *) 
+   FTRSE_MXILINX_Top #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                           .CE(CE), 
+                           .R(R), 
+                           .S(XLXN_2), 
+                           .T(XLXN_1), 
+                           .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_1" *) 
+   FTRSE_MXILINX_Top #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                           .CE(CE), 
+                           .R(R), 
+                           .S(XLXN_2), 
+                           .T(Q0_DUMMY), 
+                           .Q(Q1_DUMMY));
+   (* HU_SET = "I_Q2_2" *) 
+   FTRSE_MXILINX_Top #( .INIT(1'b0) ) I_Q2 (.C(C), 
+                           .CE(CE), 
+                           .R(R), 
+                           .S(XLXN_2), 
+                           .T(T2), 
+                           .Q(Q2_DUMMY));
+   (* HU_SET = "I_Q3_3" *) 
+   FTRSE_MXILINX_Top #( .INIT(1'b0) ) I_Q3 (.C(C), 
+                           .CE(CE), 
+                           .R(R), 
+                           .S(XLXN_2), 
+                           .T(T3), 
+                           .Q(Q3_DUMMY));
+   AND4  I_36_31 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_DUMMY));
+   AND3  I_36_32 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3));
+   AND2  I_36_33 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2));
+   VCC  I_36_58 (.P(XLXN_1));
+   GND  I_36_64 (.G(XLXN_2));
+   AND2  I_36_69 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_Top(D0, 
+                         D1, 
+                         E, 
+                         S0, 
+                         O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_Top(D0, 
+                         D1, 
+                         D2, 
+                         D3, 
+                         E, 
+                         S0, 
+                         S1, 
+                         O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_5" *) 
+   M2_1E_MXILINX_Top  I_M01 (.D0(D0), 
+                            .D1(D1), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M01));
+   (* HU_SET = "I_M23_4" *) 
+   M2_1E_MXILINX_Top  I_M23 (.D0(D2), 
+                            .D1(D3), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module Selector_MUSER_Top(s0, 
+                          s1, 
+                          s2, 
+                          s3, 
+                          x, 
+                          y);
+
+    input s0;
+    input s1;
+    input s2;
+    input s3;
+    input [15:0] x;
+   output [3:0] y;
+   
+   wire a;
+   wire b;
+   wire enable;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire XLXN_40;
+   
+   (* HU_SET = "XLXI_1_6" *) 
+   M4_1E_MXILINX_Top  XLXI_1 (.D0(x[0]), 
+                             .D1(x[4]), 
+                             .D2(x[8]), 
+                             .D3(x[12]), 
+                             .E(enable), 
+                             .S0(a), 
+                             .S1(b), 
+                             .O(y[0]));
+   (* HU_SET = "XLXI_2_7" *) 
+   M4_1E_MXILINX_Top  XLXI_2 (.D0(x[1]), 
+                             .D1(x[5]), 
+                             .D2(x[9]), 
+                             .D3(x[13]), 
+                             .E(enable), 
+                             .S0(a), 
+                             .S1(b), 
+                             .O(y[1]));
+   (* HU_SET = "XLXI_3_8" *) 
+   M4_1E_MXILINX_Top  XLXI_3 (.D0(x[2]), 
+                             .D1(x[6]), 
+                             .D2(x[10]), 
+                             .D3(x[14]), 
+                             .E(enable), 
+                             .S0(a), 
+                             .S1(b), 
+                             .O(y[2]));
+   (* HU_SET = "XLXI_4_9" *) 
+   M4_1E_MXILINX_Top  XLXI_4 (.D0(x[3]), 
+                             .D1(x[7]), 
+                             .D2(x[11]), 
+                             .D3(x[15]), 
+                             .E(enable), 
+                             .S0(a), 
+                             .S1(b), 
+                             .O(y[3]));
+   VCC  XLXI_5 (.P(enable));
+   OR2  XLXI_6 (.I0(XLXN_39), 
+               .I1(XLXN_36), 
+               .O(a));
+   OR2  XLXI_7 (.I0(XLXN_40), 
+               .I1(XLXN_37), 
+               .O(b));
+   AND4B3  XLXI_8 (.I0(s3), 
+                  .I1(s2), 
+                  .I2(s0), 
+                  .I3(s1), 
+                  .O(XLXN_36));
+   AND4B3  XLXI_9 (.I0(s3), 
+                  .I1(s1), 
+                  .I2(s0), 
+                  .I3(s2), 
+                  .O(XLXN_37));
+   AND4B3  XLXI_14 (.I0(s2), 
+                   .I1(s1), 
+                   .I2(s3), 
+                   .I3(s0), 
+                   .O(XLXN_39));
+   AND4B3  XLXI_15 (.I0(s2), 
+                   .I1(s1), 
+                   .I2(s3), 
+                   .I3(s0), 
+                   .O(XLXN_40));
+endmodule
+`timescale 1ns / 1ps
+
+module ringcounter_MUSER_Top(CE, 
+                             clk, 
+                             an0, 
+                             an1, 
+                             an2, 
+                             an3);
+
+    input CE;
+    input clk;
+   output an0;
+   output an1;
+   output an2;
+   output an3;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire an0_DUMMY;
+   wire an1_DUMMY;
+   wire an2_DUMMY;
+   wire an3_DUMMY;
+   
+   assign an0 = an0_DUMMY;
+   assign an1 = an1_DUMMY;
+   assign an2 = an2_DUMMY;
+   assign an3 = an3_DUMMY;
+   FDE #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+               .CE(CE), 
+               .D(XLXN_1), 
+               .Q(XLXN_3));
+   FDE #( .INIT(1'b0) ) XLXI_4 (.C(clk), 
+               .CE(CE), 
+               .D(an0_DUMMY), 
+               .Q(an1_DUMMY));
+   FDE #( .INIT(1'b0) ) XLXI_5 (.C(clk), 
+               .CE(CE), 
+               .D(an1_DUMMY), 
+               .Q(an2_DUMMY));
+   FDE #( .INIT(1'b0) ) XLXI_6 (.C(clk), 
+               .CE(CE), 
+               .D(an2_DUMMY), 
+               .Q(an3_DUMMY));
+   INV  XLXI_7 (.I(an3_DUMMY), 
+               .O(XLXN_1));
+   INV  XLXI_8 (.I(XLXN_3), 
+               .O(an0_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module M8_1E_MXILINX_Top(D0, 
+                         D1, 
+                         D2, 
+                         D3, 
+                         D4, 
+                         D5, 
+                         D6, 
+                         D7, 
+                         E, 
+                         S0, 
+                         S1, 
+                         S2, 
+                         O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input D4;
+    input D5;
+    input D6;
+    input D7;
+    input E;
+    input S0;
+    input S1;
+    input S2;
+   output O;
+   
+   wire M01;
+   wire M03;
+   wire M23;
+   wire M45;
+   wire M47;
+   wire M67;
+   
+   (* HU_SET = "I_M01_13" *) 
+   M2_1E_MXILINX_Top  I_M01 (.D0(D0), 
+                            .D1(D1), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M01));
+   MUXF5_L  I_M03 (.I0(M01), 
+                  .I1(M23), 
+                  .S(S1), 
+                  .LO(M03));
+   (* HU_SET = "I_M23_12" *) 
+   M2_1E_MXILINX_Top  I_M23 (.D0(D2), 
+                            .D1(D3), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M23));
+   (* HU_SET = "I_M45_11" *) 
+   M2_1E_MXILINX_Top  I_M45 (.D0(D4), 
+                            .D1(D5), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M45));
+   MUXF5_L  I_M47 (.I0(M45), 
+                  .I1(M67), 
+                  .S(S1), 
+                  .LO(M47));
+   (* HU_SET = "I_M67_10" *) 
+   M2_1E_MXILINX_Top  I_M67 (.D0(D6), 
+                            .D1(D7), 
+                            .E(E), 
+                            .S0(S0), 
+                            .O(M67));
+   MUXF6  I_O (.I0(M03), 
+              .I1(M47), 
+              .S(S2), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module topworld_MUSER_Top(Cin, 
+                          m, 
+                          p, 
+                          q, 
+                          Cout, 
+                          S);
+
+    input Cin;
+    input m;
+    input p;
+    input q;
+   output Cout;
+   output S;
+   
+   wire Cinverse;
+   wire one;
+   wire zero;
+   
+   (* HU_SET = "XLXI_1_14" *) 
+   M8_1E_MXILINX_Top  XLXI_1 (.D0(Cin), 
+                             .D1(Cinverse), 
+                             .D2(Cin), 
+                             .D3(Cinverse), 
+                             .D4(Cin), 
+                             .D5(Cinverse), 
+                             .D6(Cinverse), 
+                             .D7(Cin), 
+                             .E(one), 
+                             .S0(p), 
+                             .S1(m), 
+                             .S2(q), 
+                             .O(S));
+   (* HU_SET = "XLXI_2_15" *) 
+   M8_1E_MXILINX_Top  XLXI_2 (.D0(zero), 
+                             .D1(Cin), 
+                             .D2(zero), 
+                             .D3(Cin), 
+                             .D4(zero), 
+                             .D5(Cin), 
+                             .D6(Cin), 
+                             .D7(one), 
+                             .E(one), 
+                             .S0(p), 
+                             .S1(m), 
+                             .S2(q), 
+                             .O(Cout));
+   INV  XLXI_3 (.I(Cin), 
+               .O(Cinverse));
+   VCC  XLXI_4 (.P(one));
+   GND  XLXI_5 (.G(zero));
+endmodule
+`timescale 1ns / 1ps
+
+module Multipler_MUSER_Top(m, 
+                           pin, 
+                           q, 
+                           pout);
+
+    input [3:0] m;
+    input [3:0] pin;
+    input q;
+   output [4:0] pout;
+   
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_13;
+   wire zero;
+   
+   topworld_MUSER_Top  XLXI_1 (.Cin(zero), 
+                              .m(m[0]), 
+                              .p(pin[0]), 
+                              .q(q), 
+                              .Cout(XLXN_10), 
+                              .S(pout[0]));
+   topworld_MUSER_Top  XLXI_2 (.Cin(XLXN_10), 
+                              .m(m[1]), 
+                              .p(pin[1]), 
+                              .q(q), 
+                              .Cout(XLXN_11), 
+                              .S(pout[1]));
+   topworld_MUSER_Top  XLXI_3 (.Cin(XLXN_11), 
+                              .m(m[2]), 
+                              .p(pin[2]), 
+                              .q(q), 
+                              .Cout(XLXN_13), 
+                              .S(pout[2]));
+   topworld_MUSER_Top  XLXI_4 (.Cin(XLXN_13), 
+                              .m(m[3]), 
+                              .p(pin[3]), 
+                              .q(q), 
+                              .Cout(pout[4]), 
+                              .S(pout[3]));
+   GND  XLXI_5 (.G(zero));
+endmodule
+`timescale 1ns / 1ps
+
+module Stage_MUSER_Top(m, 
+                       q, 
+                       pfinish);
+
+    input [3:0] m;
+    input [3:0] q;
+   output [7:0] pfinish;
+   
+   wire [4:0] p1out;
+   wire [4:0] p2out;
+   wire [4:0] p3out;
+   wire [4:0] p4out;
+   wire [3:0] zero;
+   
+   Multipler_MUSER_Top  XLXI_3 (.m(m[3:0]), 
+                               .pin(zero[3:0]), 
+                               .q(q[0]), 
+                               .pout(p1out[4:0]));
+   Multipler_MUSER_Top  XLXI_4 (.m(m[3:0]), 
+                               .pin(p1out[4:1]), 
+                               .q(q[1]), 
+                               .pout(p2out[4:0]));
+   Multipler_MUSER_Top  XLXI_5 (.m(m[3:0]), 
+                               .pin(p2out[4:1]), 
+                               .q(q[2]), 
+                               .pout(p3out[4:0]));
+   Multipler_MUSER_Top  XLXI_6 (.m(m[3:0]), 
+                               .pin(p3out[4:1]), 
+                               .q(q[3]), 
+                               .pout(p4out[4:0]));
+   GND  XLXI_7 (.G(zero[0]));
+   GND  XLXI_28 (.G(zero[1]));
+   GND  XLXI_29 (.G(zero[2]));
+   GND  XLXI_30 (.G(zero[3]));
+   BUF  XLXI_31 (.I(p4out[0]), 
+                .O(pfinish[3]));
+   BUF  XLXI_32 (.I(p1out[0]), 
+                .O(pfinish[0]));
+   BUF  XLXI_33 (.I(p4out[1]), 
+                .O(pfinish[4]));
+   BUF  XLXI_34 (.I(p2out[0]), 
+                .O(pfinish[1]));
+   BUF  XLXI_35 (.I(p4out[3]), 
+                .O(pfinish[6]));
+   BUF  XLXI_36 (.I(p3out[0]), 
+                .O(pfinish[2]));
+   BUF  XLXI_37 (.I(p4out[2]), 
+                .O(pfinish[5]));
+   BUF  XLXI_38 (.I(p4out[4]), 
+                .O(pfinish[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module COMP8_MXILINX_Top(A, 
+                         B, 
+                         EQ);
+
+    input [7:0] A;
+    input [7:0] B;
+   output EQ;
+   
+   wire AB0;
+   wire AB1;
+   wire AB2;
+   wire AB3;
+   wire AB4;
+   wire AB5;
+   wire AB6;
+   wire AB7;
+   wire AB03;
+   wire AB47;
+   
+   AND4  I_36_32 (.I0(AB7), 
+                 .I1(AB6), 
+                 .I2(AB5), 
+                 .I3(AB4), 
+                 .O(AB47));
+   XNOR2  I_36_33 (.I0(B[6]), 
+                  .I1(A[6]), 
+                  .O(AB6));
+   XNOR2  I_36_34 (.I0(B[7]), 
+                  .I1(A[7]), 
+                  .O(AB7));
+   XNOR2  I_36_35 (.I0(B[5]), 
+                  .I1(A[5]), 
+                  .O(AB5));
+   XNOR2  I_36_36 (.I0(B[4]), 
+                  .I1(A[4]), 
+                  .O(AB4));
+   AND4  I_36_41 (.I0(AB3), 
+                 .I1(AB2), 
+                 .I2(AB1), 
+                 .I3(AB0), 
+                 .O(AB03));
+   XNOR2  I_36_42 (.I0(B[2]), 
+                  .I1(A[2]), 
+                  .O(AB2));
+   XNOR2  I_36_43 (.I0(B[3]), 
+                  .I1(A[3]), 
+                  .O(AB3));
+   XNOR2  I_36_44 (.I0(B[1]), 
+                  .I1(A[1]), 
+                  .O(AB1));
+   XNOR2  I_36_45 (.I0(B[0]), 
+                  .I1(A[0]), 
+                  .O(AB0));
+   AND2  I_36_50 (.I0(AB47), 
+                 .I1(AB03), 
+                 .O(EQ));
+endmodule
+`timescale 1ns / 1ps
+
+module LFSR_MUSER_Top(clock, 
+                      enable, 
+                      R);
+
+    input clock;
+    input enable;
+   output [7:0] R;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire [7:0] R_DUMMY;
+   
+   assign R[7:0] = R_DUMMY[7:0];
+   FDE #( .INIT(1'b0) ) XLXI_1 (.C(clock), 
+               .CE(enable), 
+               .D(XLXN_23), 
+               .Q(XLXN_24));
+   FDE #( .INIT(1'b0) ) XLXI_2 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[3]), 
+               .Q(R_DUMMY[4]));
+   FDE #( .INIT(1'b0) ) XLXI_3 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[6]), 
+               .Q(R_DUMMY[7]));
+   FDE #( .INIT(1'b0) ) XLXI_4 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[0]), 
+               .Q(R_DUMMY[1]));
+   FDE #( .INIT(1'b0) ) XLXI_5 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[4]), 
+               .Q(R_DUMMY[5]));
+   FDE #( .INIT(1'b0) ) XLXI_6 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[1]), 
+               .Q(R_DUMMY[2]));
+   FDE #( .INIT(1'b0) ) XLXI_7 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[5]), 
+               .Q(R_DUMMY[6]));
+   FDE #( .INIT(1'b0) ) XLXI_8 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[2]), 
+               .Q(R_DUMMY[3]));
+   XOR4  XLXI_20 (.I0(R_DUMMY[7]), 
+                 .I1(R_DUMMY[6]), 
+                 .I2(R_DUMMY[5]), 
+                 .I3(R_DUMMY[0]), 
+                 .O(XLXN_25));
+   INV  XLXI_23 (.I(XLXN_25), 
+                .O(XLXN_23));
+   INV  XLXI_24 (.I(XLXN_24), 
+                .O(R_DUMMY[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module ff5_MUSER_Top(clk, 
+                     D, 
+                     Q);
+
+    input clk;
+    input [4:0] D;
+   output [4:0] Q;
+   
+   wire XLXN_10;
+   wire XLXN_15;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(clk), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FD #( .INIT(1'b0) ) XLXI_4 (.C(clk), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FD #( .INIT(1'b0) ) XLXI_5 (.C(clk), 
+              .D(XLXN_10), 
+              .Q(XLXN_15));
+   INV  XLXI_6 (.I(D[0]), 
+               .O(XLXN_10));
+   INV  XLXI_7 (.I(XLXN_15), 
+               .O(Q[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Top(BTN1, 
+           eclk, 
+           gsr, 
+           PB0, 
+           PB2, 
+           sw0, 
+           sw1, 
+           sw2, 
+           sw3, 
+           sw4, 
+           sw5, 
+           sw6, 
+           sw7, 
+           ann0, 
+           ann1, 
+           ann2, 
+           ann3, 
+           CA, 
+           CB, 
+           CC, 
+           CD, 
+           CE, 
+           CF, 
+           CG, 
+           LD0, 
+           LD1, 
+           LD2, 
+           LD3, 
+           LD4, 
+           LD5, 
+           LD6, 
+           LD7);
+
+    input BTN1;
+    input eclk;
+    input gsr;
+    input PB0;
+    input PB2;
+    input sw0;
+    input sw1;
+    input sw2;
+    input sw3;
+    input sw4;
+    input sw5;
+    input sw6;
+    input sw7;
+   output ann0;
+   output ann1;
+   output ann2;
+   output ann3;
+   output CA;
+   output CB;
+   output CC;
+   output CD;
+   output CE;
+   output CF;
+   output CG;
+   output LD0;
+   output LD1;
+   output LD2;
+   output LD3;
+   output LD4;
+   output LD5;
+   output LD6;
+   output LD7;
+   
+   wire an0;
+   wire an1;
+   wire an2;
+   wire an3;
+   wire clk;
+   wire Correct;
+   wire dig_sel;
+   wire FlashRight;
+   wire FlashWrong;
+   wire FourSecs;
+   wire [15:0] last;
+   wire [4:0] NS;
+   wire one;
+   wire PB1;
+   wire PB3;
+   wire [4:0] PS;
+   wire qsec;
+   wire q0;
+   wire q1;
+   wire q2;
+   wire q3;
+   wire [7:0] R;
+   wire ResetTime;
+   wire [7:0] Result;
+   wire [3:0] right;
+   wire rightall;
+   wire RightInc;
+   wire RunLFSR;
+   wire ShowNums;
+   wire ShowStats;
+   wire [7:0] sw;
+   wire [3:0] wrong;
+   wire wrongall;
+   wire WrongInc;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_126;
+   wire XLXN_360;
+   wire XLXN_361;
+   wire XLXN_362;
+   wire XLXN_363;
+   wire XLXN_364;
+   wire XLXN_365;
+   wire XLXN_366;
+   wire XLXN_398;
+   wire XLXN_442;
+   wire XLXN_479;
+   wire XLXN_487;
+   wire XLXN_488;
+   wire XLXN_489;
+   wire XLXN_490;
+   wire XLXN_492;
+   wire XLXN_493;
+   wire XLXN_830;
+   wire XLXN_834;
+   wire XLXN_864;
+   wire XLXN_865;
+   wire XLXN_866;
+   wire XLXN_870;
+   wire XLXN_871;
+   wire [3:0] y;
+   
+   LFSR_MUSER_Top  XLXI_1 (.clock(clk), 
+                          .enable(RunLFSR), 
+                          .R(R[7:0]));
+   ff5_MUSER_Top  XLXI_3 (.clk(clk), 
+                         .D(NS[4:0]), 
+                         .Q(PS[4:0]));
+   (* LOC = "P11" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_24 (.I(sw0), 
+                 .O(sw[0]));
+   (* LOC = "L3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_25 (.I(sw1), 
+                 .O(sw[1]));
+   (* LOC = "K3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_26 (.I(sw2), 
+                 .O(sw[2]));
+   (* LOC = "B4" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_27 (.I(sw3), 
+                 .O(sw[3]));
+   (* LOC = "G3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_28 (.I(sw4), 
+                 .O(sw[4]));
+   (* LOC = "F3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_29 (.I(sw5), 
+                 .O(sw[5]));
+   (* LOC = "E2" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_30 (.I(sw6), 
+                 .O(sw[6]));
+   (* LOC = "N3" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_45 (.I(sw7), 
+                 .O(sw[7]));
+   (* LOC = "G12" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_47 (.I(PB0), 
+                 .O(XLXN_65));
+   (* LOC = "M4" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_48 (.I(PB2), 
+                 .O(XLXN_66));
+   (* HU_SET = "XLXI_51_16" *) 
+   COMP8_MXILINX_Top  XLXI_51 (.A(sw[7:0]), 
+                              .B(Result[7:0]), 
+                              .EQ(Correct));
+   Stage_MUSER_Top  XLXI_52 (.m(R[7:4]), 
+                            .q(R[3:0]), 
+                            .pfinish(Result[7:0]));
+   (* HU_SET = "XLXI_54_17" *) 
+   CB4RE_MXILINX_Top  XLXI_54 (.C(clk), 
+                              .CE(qsec), 
+                              .R(ResetTime), 
+                              .CEO(), 
+                              .Q0(q0), 
+                              .Q1(q1), 
+                              .Q2(q2), 
+                              .Q3(q3), 
+                              .TC(FourSecs));
+   VCC  XLXI_55 (.P(one));
+   slowclk5  XLXI_62 (.eclk(XLXN_126), 
+                     .dig_sel(dig_sel), 
+                     .qsec(qsec), 
+                     .sysclk(clk));
+   STARTUP_SPARTAN3E  XLXI_65 (.CLK(clk), 
+                              .GSR(PB3), 
+                              .GTS(), 
+                              .MBT());
+   (* LOC = "A7" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_75 (.I(gsr), 
+                 .O(PB3));
+   (* LOC = "B8" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+   IBUFG  XLXI_76 (.I(eclk), 
+                  .O(XLXN_126));
+   (* HU_SET = "XLXI_101_19" *) 
+   CB4RE_MXILINX_Top  XLXI_101 (.C(clk), 
+                               .CE(RightInc), 
+                               .R(XLXN_870), 
+                               .CEO(), 
+                               .Q0(right[0]), 
+                               .Q1(right[1]), 
+                               .Q2(right[2]), 
+                               .Q3(right[3]), 
+                               .TC(rightall));
+   (* HU_SET = "XLXI_102_18" *) 
+   CB4RE_MXILINX_Top  XLXI_102 (.C(clk), 
+                               .CE(WrongInc), 
+                               .R(XLXN_871), 
+                               .CEO(), 
+                               .Q0(wrong[0]), 
+                               .Q1(wrong[1]), 
+                               .Q2(wrong[2]), 
+                               .Q3(wrong[3]), 
+                               .TC(wrongall));
+   ringcounter_MUSER_Top  XLXI_103 (.CE(dig_sel), 
+                                   .clk(clk), 
+                                   .an0(an0), 
+                                   .an1(an1), 
+                                   .an2(an2), 
+                                   .an3(an3));
+   Selector_MUSER_Top  XLXI_104 (.s0(an0), 
+                                .s1(an1), 
+                                .s2(an2), 
+                                .s3(an3), 
+                                .x(last[15:0]), 
+                                .y(y[3:0]));
+   (* LOC = "C11" *) (* IOSTANDARD = "DEFAULT" *) (* IBUF_DELAY_VALUE = "0" *) 
+         (* IFD_DELAY_VALUE = "AUTO" *) 
+   IBUF  XLXI_106 (.I(BTN1), 
+                  .O(PB1));
+   hex7seg  XLXI_120 (.n0(y[0]), 
+                     .n1(y[1]), 
+                     .n2(y[2]), 
+                     .n3(y[3]), 
+                     .CA(XLXN_360), 
+                     .CB(XLXN_361), 
+                     .CC(XLXN_362), 
+                     .CD(XLXN_363), 
+                     .CE(XLXN_364), 
+                     .CF(XLXN_365), 
+                     .CG(XLXN_366));
+   (* LOC = "L14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_146 (.I(XLXN_360), 
+                  .O(CA));
+   (* LOC = "H12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_147 (.I(XLXN_361), 
+                  .O(CB));
+   (* LOC = "N14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_148 (.I(XLXN_362), 
+                  .O(CC));
+   (* LOC = "N11" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_149 (.I(XLXN_363), 
+                  .O(CD));
+   (* LOC = "P12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_150 (.I(XLXN_364), 
+                  .O(CE));
+   (* LOC = "L13" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_151 (.I(XLXN_365), 
+                  .O(CF));
+   (* LOC = "M12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_152 (.I(XLXN_366), 
+                  .O(CG));
+   AND2  XLXI_160 (.I0(an2), 
+                  .I1(ShowStats), 
+                  .O(XLXN_834));
+   (* LOC = "M13" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_161 (.I(XLXN_493), 
+                  .O(ann2));
+   (* LOC = "J12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_162 (.I(XLXN_490), 
+                  .O(ann1));
+   (* LOC = "K14" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_163 (.I(XLXN_489), 
+                  .O(ann3));
+   BUF  XLXI_166_0 (.I(right[0]), 
+                   .O(last[0]));
+   BUF  XLXI_166_1 (.I(right[1]), 
+                   .O(last[1]));
+   BUF  XLXI_166_2 (.I(right[2]), 
+                   .O(last[2]));
+   BUF  XLXI_166_3 (.I(right[3]), 
+                   .O(last[3]));
+   BUF  XLXI_168_0 (.I(R[0]), 
+                   .O(last[4]));
+   BUF  XLXI_168_1 (.I(R[1]), 
+                   .O(last[5]));
+   BUF  XLXI_168_2 (.I(R[2]), 
+                   .O(last[6]));
+   BUF  XLXI_168_3 (.I(R[3]), 
+                   .O(last[7]));
+   BUF  XLXI_169_0 (.I(wrong[0]), 
+                   .O(last[8]));
+   BUF  XLXI_169_1 (.I(wrong[1]), 
+                   .O(last[9]));
+   BUF  XLXI_169_2 (.I(wrong[2]), 
+                   .O(last[10]));
+   BUF  XLXI_169_3 (.I(wrong[3]), 
+                   .O(last[11]));
+   BUF  XLXI_172_0 (.I(R[4]), 
+                   .O(last[12]));
+   BUF  XLXI_172_1 (.I(R[5]), 
+                   .O(last[13]));
+   BUF  XLXI_172_2 (.I(R[6]), 
+                   .O(last[14]));
+   BUF  XLXI_172_3 (.I(R[7]), 
+                   .O(last[15]));
+   (* LOC = "F12" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_173 (.I(XLXN_492), 
+                  .O(ann0));
+   AND3  XLXI_199 (.I0(an2), 
+                  .I1(q1), 
+                  .I2(FlashWrong), 
+                  .O(XLXN_830));
+   AND2  XLXI_200 (.I0(an2), 
+                  .I1(FlashRight), 
+                  .O(XLXN_442));
+   OR3  XLXI_201 (.I0(XLXN_442), 
+                 .I1(XLXN_834), 
+                 .I2(XLXN_830), 
+                 .O(XLXN_479));
+   AND2  XLXI_211 (.I0(ShowNums), 
+                  .I1(an1), 
+                  .O(XLXN_487));
+   AND2  XLXI_214 (.I0(ShowNums), 
+                  .I1(an0), 
+                  .O(XLXN_488));
+   statemachine  XLXI_220 (.ANSWER(XLXN_66), 
+                          .Correct(Correct), 
+                          .FourSecs(FourSecs), 
+                          .GO(XLXN_65), 
+                          .PS(PS[4:0]), 
+                          .FlashRight(FlashRight), 
+                          .FlashWrong(FlashWrong), 
+                          .NS(NS[4:0]), 
+                          .ResetTime(ResetTime), 
+                          .RightInc(RightInc), 
+                          .RunLFSR(RunLFSR), 
+                          .ShowNums(ShowNums), 
+                          .ShowStats(ShowStats), 
+                          .WrongInc(WrongInc));
+   INV  XLXI_228 (.I(XLXN_479), 
+                 .O(XLXN_493));
+   INV  XLXI_229 (.I(XLXN_398), 
+                 .O(XLXN_492));
+   INV  XLXI_230 (.I(XLXN_487), 
+                 .O(XLXN_490));
+   INV  XLXI_231 (.I(XLXN_488), 
+                 .O(XLXN_489));
+   (* LOC = "M5" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_303 (.I(sw[0]), 
+                  .O(LD0));
+   (* LOC = "M11" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_304 (.I(sw[1]), 
+                  .O(LD1));
+   (* LOC = "P7" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_305 (.I(sw[2]), 
+                  .O(LD2));
+   (* LOC = "P6" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_306 (.I(sw[3]), 
+                  .O(LD3));
+   (* LOC = "N5" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_307 (.I(sw[4]), 
+                  .O(LD4));
+   (* LOC = "N4" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_308 (.I(sw[5]), 
+                  .O(LD5));
+   (* LOC = "P4" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_309 (.I(sw[6]), 
+                  .O(LD6));
+   (* LOC = "G1" *) (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* 
+         DRIVE = "12" *) 
+   OBUF  XLXI_310 (.I(sw[7]), 
+                  .O(LD7));
+   AND3  XLXI_347 (.I0(an3), 
+                  .I1(q1), 
+                  .I2(FlashRight), 
+                  .O(XLXN_864));
+   AND2  XLXI_348 (.I0(an3), 
+                  .I1(FlashWrong), 
+                  .O(XLXN_866));
+   AND2  XLXI_349 (.I0(an3), 
+                  .I1(ShowStats), 
+                  .O(XLXN_865));
+   OR3  XLXI_350 (.I0(XLXN_866), 
+                 .I1(XLXN_865), 
+                 .I2(XLXN_864), 
+                 .O(XLXN_398));
+   GND  XLXI_351 (.G(XLXN_870));
+   GND  XLXI_352 (.G(XLXN_871));
+endmodule

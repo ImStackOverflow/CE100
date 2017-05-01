@@ -1,0 +1,78 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LFSR.vf
+// /___/   /\     Timestamp : 02/10/2016 23:32:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/Lab5/lab53/lab5/LFSR.vf -w C:/Users/asilva3/Desktop/Lab5/lab53/lab5/LFSR.sch
+//Design Name: LFSR
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module LFSR(clock, 
+            enable, 
+            R);
+
+    input clock;
+    input enable;
+   output [7:0] R;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire [7:0] R_DUMMY;
+   
+   assign R[7:0] = R_DUMMY[7:0];
+   FDE #( .INIT(1'b0) ) XLXI_1 (.C(clock), 
+               .CE(enable), 
+               .D(XLXN_23), 
+               .Q(XLXN_24));
+   FDE #( .INIT(1'b0) ) XLXI_2 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[3]), 
+               .Q(R_DUMMY[4]));
+   FDE #( .INIT(1'b0) ) XLXI_3 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[6]), 
+               .Q(R_DUMMY[7]));
+   FDE #( .INIT(1'b0) ) XLXI_4 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[0]), 
+               .Q(R_DUMMY[1]));
+   FDE #( .INIT(1'b0) ) XLXI_5 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[4]), 
+               .Q(R_DUMMY[5]));
+   FDE #( .INIT(1'b0) ) XLXI_6 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[1]), 
+               .Q(R_DUMMY[2]));
+   FDE #( .INIT(1'b0) ) XLXI_7 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[5]), 
+               .Q(R_DUMMY[6]));
+   FDE #( .INIT(1'b0) ) XLXI_8 (.C(clock), 
+               .CE(enable), 
+               .D(R_DUMMY[2]), 
+               .Q(R_DUMMY[3]));
+   XOR4  XLXI_20 (.I0(R_DUMMY[7]), 
+                 .I1(R_DUMMY[6]), 
+                 .I2(R_DUMMY[5]), 
+                 .I3(R_DUMMY[0]), 
+                 .O(XLXN_25));
+   INV  XLXI_23 (.I(XLXN_25), 
+                .O(XLXN_23));
+   INV  XLXI_24 (.I(XLXN_24), 
+                .O(R_DUMMY[0]));
+endmodule

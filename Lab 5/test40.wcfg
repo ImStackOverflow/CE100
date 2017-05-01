@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/asilva3/Desktop/Lab5/lab54/lab5/Top_Top_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Top_Top_sch_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/Top_Top_sch_tb/ann2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ann2</obj_property>
+      <obj_property name="ObjectShortName">ann2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD1</obj_property>
+      <obj_property name="ObjectShortName">LD1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD2</obj_property>
+      <obj_property name="ObjectShortName">LD2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD3</obj_property>
+      <obj_property name="ObjectShortName">LD3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD4</obj_property>
+      <obj_property name="ObjectShortName">LD4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD0</obj_property>
+      <obj_property name="ObjectShortName">LD0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/ann3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ann3</obj_property>
+      <obj_property name="ObjectShortName">ann3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/ann1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ann1</obj_property>
+      <obj_property name="ObjectShortName">ann1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD5</obj_property>
+      <obj_property name="ObjectShortName">LD5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD6</obj_property>
+      <obj_property name="ObjectShortName">LD6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/LD7" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LD7</obj_property>
+      <obj_property name="ObjectShortName">LD7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/ann0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ann0</obj_property>
+      <obj_property name="ObjectShortName">ann0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/eclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eclk</obj_property>
+      <obj_property name="ObjectShortName">eclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/gsr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">gsr</obj_property>
+      <obj_property name="ObjectShortName">gsr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/PB0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PB0</obj_property>
+      <obj_property name="ObjectShortName">PB0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/PB2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PB2</obj_property>
+      <obj_property name="ObjectShortName">PB2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw0</obj_property>
+      <obj_property name="ObjectShortName">sw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw1</obj_property>
+      <obj_property name="ObjectShortName">sw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw2</obj_property>
+      <obj_property name="ObjectShortName">sw2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw3</obj_property>
+      <obj_property name="ObjectShortName">sw3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw4</obj_property>
+      <obj_property name="ObjectShortName">sw4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/BTN1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BTN1</obj_property>
+      <obj_property name="ObjectShortName">BTN1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw5</obj_property>
+      <obj_property name="ObjectShortName">sw5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw6</obj_property>
+      <obj_property name="ObjectShortName">sw6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/sw7" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw7</obj_property>
+      <obj_property name="ObjectShortName">sw7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/PERIOD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/DUTY_CYCLE" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">DUTY_CYCLE</obj_property>
+      <obj_property name="ObjectShortName">DUTY_CYCLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/OFFSET" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OFFSET[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/XLXI_1/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/XLXI_1/R" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/PS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/NS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">NS[4:0]</obj_property>
+      <obj_property name="ObjectShortName">NS[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/WrongInc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WrongInc</obj_property>
+      <obj_property name="ObjectShortName">WrongInc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/wrong" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wrong[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wrong[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Top_sch_tb/UUT/Correct" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Correct</obj_property>
+      <obj_property name="ObjectShortName">Correct</obj_property>
+   </wvobject>
+</wave_config>

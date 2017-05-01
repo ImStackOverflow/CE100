@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {C:/Users/asilva3/Desktop/LastLab3/New Lab/lab5/statemachine.v} -lang verilog -prj lab5 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e statemachine.spl {C:/Users/asilva3/Desktop/LastLab3/New Lab/lab5/statemachine.sym} 
+vhdtdtfi -lib work C:/Users/asilva3/Desktop/Lab5/lab53/lab5/statemachine.v -lang verilog -prj lab5 -o statemachine.spl -module statemachine -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e statemachine.spl C:/Users/asilva3/Desktop/Lab5/lab53/lab5/statemachine.sym 

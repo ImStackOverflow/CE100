@@ -1,0 +1,272 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Stage.vf
+// /___/   /\     Timestamp : 02/10/2016 23:32:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/asilva3/Desktop/Lab5/lab53/lab5/Stage.vf -w C:/Users/asilva3/Desktop/Lab5/lab53/lab5/Stage.sch
+//Design Name: Stage
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_Stage(D0, 
+                           D1, 
+                           E, 
+                           S0, 
+                           O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M8_1E_MXILINX_Stage(D0, 
+                           D1, 
+                           D2, 
+                           D3, 
+                           D4, 
+                           D5, 
+                           D6, 
+                           D7, 
+                           E, 
+                           S0, 
+                           S1, 
+                           S2, 
+                           O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input D4;
+    input D5;
+    input D6;
+    input D7;
+    input E;
+    input S0;
+    input S1;
+    input S2;
+   output O;
+   
+   wire M01;
+   wire M03;
+   wire M23;
+   wire M45;
+   wire M47;
+   wire M67;
+   
+   (* HU_SET = "I_M01_9" *) 
+   M2_1E_MXILINX_Stage  I_M01 (.D0(D0), 
+                              .D1(D1), 
+                              .E(E), 
+                              .S0(S0), 
+                              .O(M01));
+   MUXF5_L  I_M03 (.I0(M01), 
+                  .I1(M23), 
+                  .S(S1), 
+                  .LO(M03));
+   (* HU_SET = "I_M23_8" *) 
+   M2_1E_MXILINX_Stage  I_M23 (.D0(D2), 
+                              .D1(D3), 
+                              .E(E), 
+                              .S0(S0), 
+                              .O(M23));
+   (* HU_SET = "I_M45_7" *) 
+   M2_1E_MXILINX_Stage  I_M45 (.D0(D4), 
+                              .D1(D5), 
+                              .E(E), 
+                              .S0(S0), 
+                              .O(M45));
+   MUXF5_L  I_M47 (.I0(M45), 
+                  .I1(M67), 
+                  .S(S1), 
+                  .LO(M47));
+   (* HU_SET = "I_M67_6" *) 
+   M2_1E_MXILINX_Stage  I_M67 (.D0(D6), 
+                              .D1(D7), 
+                              .E(E), 
+                              .S0(S0), 
+                              .O(M67));
+   MUXF6  I_O (.I0(M03), 
+              .I1(M47), 
+              .S(S2), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module topworld_MUSER_Stage(Cin, 
+                            m, 
+                            p, 
+                            q, 
+                            Cout, 
+                            S);
+
+    input Cin;
+    input m;
+    input p;
+    input q;
+   output Cout;
+   output S;
+   
+   wire Cinverse;
+   wire one;
+   wire zero;
+   
+   (* HU_SET = "XLXI_1_10" *) 
+   M8_1E_MXILINX_Stage  XLXI_1 (.D0(Cin), 
+                               .D1(Cinverse), 
+                               .D2(Cin), 
+                               .D3(Cinverse), 
+                               .D4(Cin), 
+                               .D5(Cinverse), 
+                               .D6(Cinverse), 
+                               .D7(Cin), 
+                               .E(one), 
+                               .S0(p), 
+                               .S1(m), 
+                               .S2(q), 
+                               .O(S));
+   (* HU_SET = "XLXI_2_11" *) 
+   M8_1E_MXILINX_Stage  XLXI_2 (.D0(zero), 
+                               .D1(Cin), 
+                               .D2(zero), 
+                               .D3(Cin), 
+                               .D4(zero), 
+                               .D5(Cin), 
+                               .D6(Cin), 
+                               .D7(one), 
+                               .E(one), 
+                               .S0(p), 
+                               .S1(m), 
+                               .S2(q), 
+                               .O(Cout));
+   INV  XLXI_3 (.I(Cin), 
+               .O(Cinverse));
+   VCC  XLXI_4 (.P(one));
+   GND  XLXI_5 (.G(zero));
+endmodule
+`timescale 1ns / 1ps
+
+module Multipler_MUSER_Stage(m, 
+                             pin, 
+                             q, 
+                             pout);
+
+    input [3:0] m;
+    input [3:0] pin;
+    input q;
+   output [4:0] pout;
+   
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_13;
+   wire zero;
+   
+   topworld_MUSER_Stage  XLXI_1 (.Cin(zero), 
+                                .m(m[0]), 
+                                .p(pin[0]), 
+                                .q(q), 
+                                .Cout(XLXN_10), 
+                                .S(pout[0]));
+   topworld_MUSER_Stage  XLXI_2 (.Cin(XLXN_10), 
+                                .m(m[1]), 
+                                .p(pin[1]), 
+                                .q(q), 
+                                .Cout(XLXN_11), 
+                                .S(pout[1]));
+   topworld_MUSER_Stage  XLXI_3 (.Cin(XLXN_11), 
+                                .m(m[2]), 
+                                .p(pin[2]), 
+                                .q(q), 
+                                .Cout(XLXN_13), 
+                                .S(pout[2]));
+   topworld_MUSER_Stage  XLXI_4 (.Cin(XLXN_13), 
+                                .m(m[3]), 
+                                .p(pin[3]), 
+                                .q(q), 
+                                .Cout(pout[4]), 
+                                .S(pout[3]));
+   GND  XLXI_5 (.G(zero));
+endmodule
+`timescale 1ns / 1ps
+
+module Stage(m, 
+             q, 
+             pfinish);
+
+    input [3:0] m;
+    input [3:0] q;
+   output [7:0] pfinish;
+   
+   wire [4:0] p1out;
+   wire [4:0] p2out;
+   wire [4:0] p3out;
+   wire [4:0] p4out;
+   wire [3:0] zero;
+   
+   Multipler_MUSER_Stage  XLXI_3 (.m(m[3:0]), 
+                                 .pin(zero[3:0]), 
+                                 .q(q[0]), 
+                                 .pout(p1out[4:0]));
+   Multipler_MUSER_Stage  XLXI_4 (.m(m[3:0]), 
+                                 .pin(p1out[4:1]), 
+                                 .q(q[1]), 
+                                 .pout(p2out[4:0]));
+   Multipler_MUSER_Stage  XLXI_5 (.m(m[3:0]), 
+                                 .pin(p2out[4:1]), 
+                                 .q(q[2]), 
+                                 .pout(p3out[4:0]));
+   Multipler_MUSER_Stage  XLXI_6 (.m(m[3:0]), 
+                                 .pin(p3out[4:1]), 
+                                 .q(q[3]), 
+                                 .pout(p4out[4:0]));
+   GND  XLXI_7 (.G(zero[0]));
+   GND  XLXI_28 (.G(zero[1]));
+   GND  XLXI_29 (.G(zero[2]));
+   GND  XLXI_30 (.G(zero[3]));
+   BUF  XLXI_31 (.I(p4out[0]), 
+                .O(pfinish[3]));
+   BUF  XLXI_32 (.I(p1out[0]), 
+                .O(pfinish[0]));
+   BUF  XLXI_33 (.I(p4out[1]), 
+                .O(pfinish[4]));
+   BUF  XLXI_34 (.I(p2out[0]), 
+                .O(pfinish[1]));
+   BUF  XLXI_35 (.I(p4out[3]), 
+                .O(pfinish[6]));
+   BUF  XLXI_36 (.I(p3out[0]), 
+                .O(pfinish[2]));
+   BUF  XLXI_37 (.I(p4out[2]), 
+                .O(pfinish[5]));
+   BUF  XLXI_38 (.I(p4out[4]), 
+                .O(pfinish[7]));
+endmodule
